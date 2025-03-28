@@ -38,7 +38,7 @@ jobs:
           file: ./dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/Test_frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/test_frontend:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
