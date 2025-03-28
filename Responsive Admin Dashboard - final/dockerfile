@@ -1,0 +1,11 @@
+# Sử dụng Nginx làm web server
+FROM nginx:alpine
+
+# Copy toàn bộ mã nguồn vào thư mục /usr/share/nginx/html/
+COPY . /usr/share/nginx/html
+
+# Expose cổng 80 để truy cập web
+EXPOSE 80
+
+# Khởi động Nginx
+CMD ["nginx", "-g", "daemon off;"]
