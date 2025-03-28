@@ -15,5 +15,6 @@ spec:
       containers:
         - name: frontend
           image: minhkhoi24k/test_frontend:latest
+          imagePullPolicy: Always  # Luôn pull image mới
           ports:
             - containerPort: 80
