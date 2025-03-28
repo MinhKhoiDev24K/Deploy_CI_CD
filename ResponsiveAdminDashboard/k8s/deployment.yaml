@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: minhkhoidev24k/test_frontend:latest
+          image: minhkhoi24k/test_frontend:latest
           ports:
             - containerPort: 80
